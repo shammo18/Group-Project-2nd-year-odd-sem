@@ -1,18 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>MathJax example</title>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js"></script>
-
-
-
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 <style>
 body {
   margin: 0;
@@ -190,15 +180,10 @@ body {
 }
 
 </style>
-
 </head>
 <body>
 
-
-
-
 <div class="header">
-
   <a id="name">Code Box</a>
   <a id="icon"> <i class="fa fa-bars"></i> </a>
 </div>
@@ -212,12 +197,11 @@ body {
 <div class="hr"><hr></div>
 
 <div class="content">
-
 <div id="headimg" style="width:100%; overflow:hidden; margin:0; padding:0;"> <img src="https://i.dlpng.com/static/png/6863979_preview.png"></div>
   <div id="blogcntent">
    <h3>
 <!-- Paste the Problem Name -->
-DiceThrows
+
 
 
 
@@ -227,7 +211,7 @@ DiceThrows
 <p> Problem Link : 
 <!-- Paste the Problem Link -->
 
-<a href="https://community.topcoder.com/stat?c=problem_statement&pm=4450&rd=7217"> https://community.topcoder.com/stat?c=problem_statement&pm=4450&rd=7217</a>
+<a href=""> </a>
 
 <!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
 </p>
@@ -235,21 +219,8 @@ DiceThrows
 
 <b> Solution:</b>
 </br></br>
-<p style="color:black; ">
-
-
-
-
+<p style="color:#a5cb55; ">
 <!-- Paste the Brute forces Solution  -->
-Let ,<br>
-      a[i] = Probability of getting sum ‘i’ for player A.<br>
-      b[i] = Probability of getting sum ‘i’ for player B.<br><br>
-Here , i can be any valid sum according to the constraints. (1 – 20000).
-To calculate a[i] for all i , we can use DP. DP states should be,*steps 
-(how many times person A need to throw that dice) and *sum (means I).
-b[i] can be calculated same way. So,<br> the  the probability of winning 
-A , $$= \displaystyle\sum\limits_{i=1}^{20000} (a[i] * \displaystyle\sum\limits_{i=1}^{i - 1}b[i])$$. Here , we can use cumulative sum technique to reduce time
-complexity.
 
 
 
@@ -258,7 +229,7 @@ complexity.
 </br></br><b> Source Code:</b></br></br>
 
 <!-- Paste the Gist Embaded script  -->
-<script src="https://gist.github.com/shammo18/476d179e9f95c537d2e7c7bf1bef910f.js"></script>
+
 
 <!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
 </p>
