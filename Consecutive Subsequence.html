@@ -202,7 +202,7 @@ body {
    <h3>
 <!-- Paste the Problem Name -->
 
-
+     Consecutive Subsequence.
 
 
 <!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
@@ -211,7 +211,7 @@ body {
 <p> Problem Link : 
 <!-- Paste the Problem Link -->
 
-<a href=""> </a>
+<a href="https://codeforces.com/problemset/problem/977/F">https://codeforces.com/problemset/problem/977/F </a>
 
 <!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
 </p>
@@ -219,15 +219,19 @@ body {
 
   <p> 
   <!-- Paste The tag here  -->
-<b>Tags:</b> 
+<b>Tags:</b> DP
 </p>
  <br>
 
 <b> Solution:</b>
 </br></br>
-<p style="color:#a5cb55; ">
+<p style="color:black; ">
 <!-- Paste The Solution  -->
 
+To maintain the order we will run a loop from backward and run a DP. Let , dp[arr[i]] = maximum number of elements we can take if arr[i] is the 1st element. 
+Then the transition will be , dp[arr[i]] = max(dp[arr[i] + 1] , dp[arr[i]]);
+
+As , arr[i] can be up to 10^9 . We can use map to maintain DP. The time complexity will be O(nlogn);
 
 
 <!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
@@ -236,8 +240,7 @@ body {
 
 <!-- Paste the Gist Embaded script  -->
 
-
-<!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
+<script src="https://gist.github.com/shammo18/f829f9ee78cda71e4b9f228d45c367f1.js"></script><!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
 </p>
 </div>
 </div>
