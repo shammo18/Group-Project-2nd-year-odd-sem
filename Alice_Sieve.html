@@ -218,6 +218,14 @@ Alice Sieve
 <p style="color:#a5cb55; ">
 
 <!-- Paste the Task -->
+The Sieve of Alice, formally defined by the following procedure, which determines the Sieve of Alice up to a given limit N.
+</br></br>1.Create a list of consecutive integers from N to 2 (N, N-1, N-2, ..., 3, 2). All of those N-1numbers are initially unmarked.
+</br>2.Initially, let P equal N, and leave this number unmarked.
+</br>3.Mark all the proper divisors of P (i.e. P remains unmarked).
+</br>4.Find the largest unmarked number from 2 to P – 1, and now let P equal this number.
+</br>5.If there were no more unmarked numbers in the list, stop. Otherwise, repeat from step 3.
+
+</br></br>The Output is, for a given limit N, how many integers will remain unmarked.
 
 
 
@@ -231,14 +239,18 @@ Brute Force Solution: </br></br>
 <p style="color:#a5cb55; ">
 <!-- Paste the Brute forces Solution  -->
 
-
+প্রসিডিউর অনুযায়ী একটি এলগরিদম ইমপ্লিমেন্ট করে আনমার্ক ইলিমেন্ট এর সংখ্যা বের করা।
+</br> কিন্তু এতে টাইম কমপ্লেক্সিটি O(n^2) বা O( n sqrt(n) ) ।
 
 <!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
 </p>
 </br></br>Efficient Solution: </br></br>
 <p style="color:#a5cb55; ">
 <!-- Paste the Efficient Solution  -->
-
+এখানে একটি অতি সাধারন অবজারভেশন হচ্ছে N এর সর্বচ্চো ডিভিজর N/২ এর থেকে বড় হতে পারে না। </br>
+ অর্থাত, ২ থেকে N/২ এর প্রতিটি সংখ্যার সর্বচ্চো একটি করে ডিভিজর থাকবেই ।
+সুতরাং আউটপুট হচ্ছে N - N/২ বা N/২+N%২
+বা জোড় হলে N/২ , বিজোড় হলে N/২+১ ।
 
 
 <!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
