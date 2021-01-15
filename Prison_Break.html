@@ -201,8 +201,8 @@ body {
   <div id="blogcntent">
    <h3>
 <!-- Paste the Problem Name -->
+  Prison Break
 
-Big Mod
 
 <!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
 </h3>
@@ -210,7 +210,7 @@ Big Mod
 <p> Problem Link : 
 <!-- Paste the Problem Link -->
 
-<a href="https://onlinejudge.org/external/3/374.pdf"> https://onlinejudge.org/external/3/374.pdf</a>
+<a href="https://codeforces.com/contest/1457/problem/A">https://codeforces.com/contest/1457/problem/A</a>
 
 <!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
 </p>
@@ -218,25 +218,25 @@ Big Mod
 <p style="color:#a5cb55; ">
 
 <!-- Paste the Task -->
+There is a prison that can be represented as a rectangular matrix with n rows and m columns. Therefore, there are n⋅m prison cells. There are also n⋅m prisoners, one in each prison cell. Let's denote the cell in the i-th row and the j-th column as (i,j).
 
-এখানে a<sup>b</sup>%m বের করতে বলা হয়েছে
+There's a secret tunnel in the cell (r,c), that the prisoners will use to escape! However, to avoid the risk of getting caught, they will escape at night.
+
+Before the night, every prisoner is in his own cell. When night comes, they can start moving to adjacent cells. Formally, in one second, a prisoner located in cell (i,j) can move to cells (i−1,j) , (i+1,j) , (i,j−1) , or (i,j+1), as long as the target cell is inside the prison. They can also choose to stay in cell (i,j).
+
+The prisoners want to know the minimum number of seconds needed so that every prisoner can arrive to cell (r,c) if they move optimally. Note that there can be any number of prisoners in the same cell at the same time.
+
 
 <!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
 
 </p>
 </br></br>
 <b> Solution:</b>
-</br></br>
 
-</br></br>Efficient Solution: </br></br>
 <p style="color:#a5cb55; ">
 <!-- Paste the Efficient Solution  -->
-এই সমস্যা সমাধানের মুল ভিত্তিই হচ্ছে নিম্নোক্ত সমীকরণ টিঃ</br>
-(a * b) % MOD = ((a % MOD) * (b % MOD)) % MOD</br></br>
 
-আমরা a<sup>b</sup>%m =  ((a<sup>b/২</sup>%m)*(a<sup>b/২</sup>%m))% m (জোড় হলে)</br>
-এবং a<sup>b</sup>%m =  ((a%m)*(a<sup>b-১</sup>%m))% m (বিজোড় হলে)</br>
-এই দুটি অবজারভেশন এর মাধ্যমেই সমস্যাটি log N টাইম কমপ্লেক্সিটিতে সমাধান করতে পারি
+<a href="https://codeforces.com/blog/entry/85118">OFFICIAL TUTORIAL</a>
 
 <!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
 </p>
@@ -244,7 +244,7 @@ Big Mod
 </br></br><b> Source Code:</b></br></br>
 
 <!-- Paste the Gist Embaded script  -->
-<script src="https://gist.github.com/Nazm-nahid/624635a91b5f36849c25d632d96d1702.js"></script>
+<script src="https://gist.github.com/Nazm-nahid/688c767f2167586248519d21845d83ea.js"></script>
 
 <!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
 </p>

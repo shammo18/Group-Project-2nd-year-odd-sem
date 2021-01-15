@@ -201,8 +201,8 @@ body {
   <div id="blogcntent">
    <h3>
 <!-- Paste the Problem Name -->
+String Equality
 
-Big Mod
 
 <!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
 </h3>
@@ -210,7 +210,7 @@ Big Mod
 <p> Problem Link : 
 <!-- Paste the Problem Link -->
 
-<a href="https://onlinejudge.org/external/3/374.pdf"> https://onlinejudge.org/external/3/374.pdf</a>
+<a href="https://codeforces.com/contest/1451/problem/C">https://codeforces.com/contest/1451/problem/C</a>
 
 <!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
 </p>
@@ -218,25 +218,29 @@ Big Mod
 <p style="color:#a5cb55; ">
 
 <!-- Paste the Task -->
+Ashish has two strings a and b, each of length n, and an integer k. The strings only contain lowercase English letters.
 
-এখানে a<sup>b</sup>%m বের করতে বলা হয়েছে
+He wants to convert string a into string b by performing some (possibly zero) operations on a.
+
+In one move, he can either
+
+choose an index i (1≤i≤n−1) and swap ai and ai+1, or
+choose an index i (1≤i≤n−k+1) and if ai,ai+1,…,ai+k−1 are all equal to some character c (c≠ 'z'), replace each one with the next character (c+1), that is, 'a' is replaced by 'b', 'b' is replaced by 'c' and so on.
+Note that he can perform any number of operations, and the operations can only be performed on string a.
+
+Help Ashish determine if it is possible to convert string a into b after performing some (possibly zero) operations on it.
+
 
 <!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
 
 </p>
 </br></br>
 <b> Solution:</b>
-</br></br>
 
-</br></br>Efficient Solution: </br></br>
 <p style="color:#a5cb55; ">
 <!-- Paste the Efficient Solution  -->
-এই সমস্যা সমাধানের মুল ভিত্তিই হচ্ছে নিম্নোক্ত সমীকরণ টিঃ</br>
-(a * b) % MOD = ((a % MOD) * (b % MOD)) % MOD</br></br>
 
-আমরা a<sup>b</sup>%m =  ((a<sup>b/২</sup>%m)*(a<sup>b/২</sup>%m))% m (জোড় হলে)</br>
-এবং a<sup>b</sup>%m =  ((a%m)*(a<sup>b-১</sup>%m))% m (বিজোড় হলে)</br>
-এই দুটি অবজারভেশন এর মাধ্যমেই সমস্যাটি log N টাইম কমপ্লেক্সিটিতে সমাধান করতে পারি
+<a href="https://codeforces.com/blog/entry/84885">OFFICIAL TUTORIAL</a>
 
 <!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
 </p>
@@ -244,8 +248,8 @@ Big Mod
 </br></br><b> Source Code:</b></br></br>
 
 <!-- Paste the Gist Embaded script  -->
-<script src="https://gist.github.com/Nazm-nahid/624635a91b5f36849c25d632d96d1702.js"></script>
 
+<script src="https://gist.github.com/Nazm-nahid/6476972939e957b0b3c0edcebe82f285.js"></script>
 <!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
 </p>
 </div>

@@ -202,7 +202,7 @@ body {
    <h3>
 <!-- Paste the Problem Name -->
 
-Big Mod
+Last minute enhancements
 
 <!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
 </h3>
@@ -210,7 +210,7 @@ Big Mod
 <p> Problem Link : 
 <!-- Paste the Problem Link -->
 
-<a href="https://onlinejudge.org/external/3/374.pdf"> https://onlinejudge.org/external/3/374.pdf</a>
+<a href="https://codeforces.com/contest/1466/problem/B"> https://codeforces.com/contest/1466/problem/B</a>
 
 <!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
 </p>
@@ -218,25 +218,29 @@ Big Mod
 <p style="color:#a5cb55; ">
 
 <!-- Paste the Task -->
+Athenaeus has just finished creating his latest musical composition and will present it tomorrow to the people of Athens. Unfortunately, the melody is rather dull and highly likely won't be met with a warm reception.
 
-এখানে a<sup>b</sup>%m বের করতে বলা হয়েছে
+His song consists of n notes, which we will treat as positive integers. The diversity of a song is the number of different notes it contains. As a patron of music, Euterpe watches over composers and guides them throughout the process of creating new melodies. She decided to help Athenaeus by changing his song to make it more diverse.
+
+Being a minor goddess, she cannot arbitrarily change the song. Instead, for each of the n notes in the song, she can either leave it as it is or increase it by 1.
+
+Given the song as a sequence of integers describing the notes, find out the maximal, achievable diversity.
+
 
 <!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
 
 </p>
 </br></br>
 <b> Solution:</b>
-</br></br>
 
-</br></br>Efficient Solution: </br></br>
 <p style="color:#a5cb55; ">
 <!-- Paste the Efficient Solution  -->
-এই সমস্যা সমাধানের মুল ভিত্তিই হচ্ছে নিম্নোক্ত সমীকরণ টিঃ</br>
-(a * b) % MOD = ((a % MOD) * (b % MOD)) % MOD</br></br>
 
-আমরা a<sup>b</sup>%m =  ((a<sup>b/২</sup>%m)*(a<sup>b/২</sup>%m))% m (জোড় হলে)</br>
-এবং a<sup>b</sup>%m =  ((a%m)*(a<sup>b-১</sup>%m))% m (বিজোড় হলে)</br>
-এই দুটি অবজারভেশন এর মাধ্যমেই সমস্যাটি log N টাইম কমপ্লেক্সিটিতে সমাধান করতে পারি
+We describe two solutions.</br></br>
+
+The first focuses on maximal contiguous intervals of values. We notice that for each such interval [l,r] it can either remain unchanged or get increased to [l,r+1] (other possibilities won't increase the number of different elements; thus, we don't need to consider them). From this observation, we conclude that the result is the number of different elements in the input increased by the number of intervals containing at least one duplicate.
+</br></br>
+The second is based on a simple, greedy approach, where we analyze the elements in nondecreasing order. While analyzing, we keep the set of elements for which we have already decided its value. When we want to add the next element, then we check if it is in the set. If it is, we increase it by 1; otherwise, we keep it as it is.
 
 <!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
 </p>
@@ -244,7 +248,7 @@ Big Mod
 </br></br><b> Source Code:</b></br></br>
 
 <!-- Paste the Gist Embaded script  -->
-<script src="https://gist.github.com/Nazm-nahid/624635a91b5f36849c25d632d96d1702.js"></script>
+<script src="https://gist.github.com/Nazm-nahid/3088fb65021a41ef71459867e3e26b24.js"></script>
 
 <!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
 </p>

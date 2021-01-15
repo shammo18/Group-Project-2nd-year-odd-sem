@@ -201,8 +201,8 @@ body {
   <div id="blogcntent">
    <h3>
 <!-- Paste the Problem Name -->
+Ceil Divisions
 
-Big Mod
 
 <!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
 </h3>
@@ -210,7 +210,7 @@ Big Mod
 <p> Problem Link : 
 <!-- Paste the Problem Link -->
 
-<a href="https://onlinejudge.org/external/3/374.pdf"> https://onlinejudge.org/external/3/374.pdf</a>
+<a href="https://codeforces.com/contest/1469/problem/D">https://codeforces.com/contest/1469/problem/D</a>
 
 <!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
 </p>
@@ -218,25 +218,23 @@ Big Mod
 <p style="color:#a5cb55; ">
 
 <!-- Paste the Task -->
+You have an array a1,a2,…,an where ai=i.</br></br>
 
-এখানে a<sup>b</sup>%m বের করতে বলা হয়েছে
+In one step, you can choose two indices x and y (x≠y) and set ax=⌈ax/ay⌉ (ceiling function).
+</br></br>
+Your goal is to make array a consist of n−1 ones and 1 two in no more than n+5 steps. Note that you don't have to minimize the number of steps.
+
 
 <!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
 
 </p>
 </br></br>
 <b> Solution:</b>
-</br></br>
 
-</br></br>Efficient Solution: </br></br>
 <p style="color:#a5cb55; ">
 <!-- Paste the Efficient Solution  -->
-এই সমস্যা সমাধানের মুল ভিত্তিই হচ্ছে নিম্নোক্ত সমীকরণ টিঃ</br>
-(a * b) % MOD = ((a % MOD) * (b % MOD)) % MOD</br></br>
 
-আমরা a<sup>b</sup>%m =  ((a<sup>b/২</sup>%m)*(a<sup>b/২</sup>%m))% m (জোড় হলে)</br>
-এবং a<sup>b</sup>%m =  ((a%m)*(a<sup>b-১</sup>%m))% m (বিজোড় হলে)</br>
-এই দুটি অবজারভেশন এর মাধ্যমেই সমস্যাটি log N টাইম কমপ্লেক্সিটিতে সমাধান করতে পারি
+<a href="https://codeforces.com/blog/entry/86082">অফিসিয়াল টিউটরিয়াল </a>
 
 <!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
 </p>
@@ -244,7 +242,7 @@ Big Mod
 </br></br><b> Source Code:</b></br></br>
 
 <!-- Paste the Gist Embaded script  -->
-<script src="https://gist.github.com/Nazm-nahid/624635a91b5f36849c25d632d96d1702.js"></script>
+<script src="https://gist.github.com/Nazm-nahid/3575add84d5b3a2922f890df7936d669.js"></script>
 
 <!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
 </p>

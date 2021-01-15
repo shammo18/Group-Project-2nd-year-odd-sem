@@ -201,8 +201,8 @@ body {
   <div id="blogcntent">
    <h3>
 <!-- Paste the Problem Name -->
+     Balls of Steel
 
-Big Mod
 
 <!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
 </h3>
@@ -210,7 +210,7 @@ Big Mod
 <p> Problem Link : 
 <!-- Paste the Problem Link -->
 
-<a href="https://onlinejudge.org/external/3/374.pdf"> https://onlinejudge.org/external/3/374.pdf</a>
+<a href="https://codeforces.com/contest/1450/problem/B"> https://codeforces.com/contest/1450/problem/B </a>
 
 <!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
 </p>
@@ -219,24 +219,25 @@ Big Mod
 
 <!-- Paste the Task -->
 
-এখানে a<sup>b</sup>%m বের করতে বলা হয়েছে
+You have n distinct points (x1,y1),…,(xn,yn) on the plane and a non-negative integer parameter k. Each point is a microscopic steel ball and k is the attract power of a ball when it's charged. The attract power is the same for all balls.
+
+In one operation, you can select a ball i to charge it. Once charged, all balls with Manhattan distance at most k from ball i move to the position of ball i. Many balls may have the same coordinate after an operation.
+
+More formally, for all balls j such that |xi−xj|+|yi−yj|≤k, we assign xj:=xi and yj:=yi.
+
+An example of an operation. After charging the ball in the center, two other balls move to its position. On the right side, the red dot in the center is the common position of those balls.
+Your task is to find the minimum number of operations to move all balls to the same position, or report that this is impossible.
 
 <!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
 
 </p>
 </br></br>
 <b> Solution:</b>
-</br></br>
 
-</br></br>Efficient Solution: </br></br>
 <p style="color:#a5cb55; ">
 <!-- Paste the Efficient Solution  -->
-এই সমস্যা সমাধানের মুল ভিত্তিই হচ্ছে নিম্নোক্ত সমীকরণ টিঃ</br>
-(a * b) % MOD = ((a % MOD) * (b % MOD)) % MOD</br></br>
 
-আমরা a<sup>b</sup>%m =  ((a<sup>b/২</sup>%m)*(a<sup>b/২</sup>%m))% m (জোড় হলে)</br>
-এবং a<sup>b</sup>%m =  ((a%m)*(a<sup>b-১</sup>%m))% m (বিজোড় হলে)</br>
-এই দুটি অবজারভেশন এর মাধ্যমেই সমস্যাটি log N টাইম কমপ্লেক্সিটিতে সমাধান করতে পারি
+<a href="https://codeforces.com/blog/entry/85348">OFFICIAL TUTORIAL</a>
 
 <!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
 </p>
@@ -244,7 +245,7 @@ Big Mod
 </br></br><b> Source Code:</b></br></br>
 
 <!-- Paste the Gist Embaded script  -->
-<script src="https://gist.github.com/Nazm-nahid/624635a91b5f36849c25d632d96d1702.js"></script>
+<script src="https://gist.github.com/Nazm-nahid/df76b243b96635abf645bb4a1674e201.js"></script>
 
 <!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
 </p>
