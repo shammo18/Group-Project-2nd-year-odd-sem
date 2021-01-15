@@ -201,7 +201,7 @@ body {
   <div id="blogcntent">
    <h3>
 <!-- Paste the Problem Name -->
-
+Imbalanced Array
 
 
 
@@ -211,7 +211,8 @@ body {
 <p> Problem Link : 
 <!-- Paste the Problem Link -->
 
-<a href=""> </a>
+
+<a href="https://codeforces.com/contest/817/problem/D">https://codeforces.com/contest/817/problem/D </a>
 
 <!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
 </p>
@@ -220,6 +221,7 @@ body {
   <p> 
 <b>Tags:</b> 
   <!-- Paste The tag here  -->
+  divide and conquer
 </p>
  <br>
 
@@ -228,14 +230,20 @@ body {
 <p style="color:black; ">
 <!-- Paste The Solution  -->
 
+First of all, we will calculate the sum of maximum and minimum values on all segments separatedly. Then the answer is the difference between the sum of maximum values and minimum values.<br><br>
 
+How can we calculate the sum of minimum values, for example? For each element we will try to find the number of segments where it is the leftmost minimum element. So, we will calculate two arrays left (left[i] = j means that j is the maximum index such that ai ≥ aj and j < i) and right (right[i] = j means that j is the minimum index such that ai > aj and j > i). So actually, left[i] and right[i] represent the borders of the largest segment where ai is the leftmost minimum element (and we need to exclude those borders). While knowing these values, we can calculate the number of subsegments where ai is the leftmost minimum element.<br><br>
+
+How can we calculate, for example, the array left? We will use a stack where we will store some indices in the array a in such a way that, if we change all indices to the values in the array a, they will be in sorted order (the maximum element will be at the top of the stack, and the minimum — at the bottom). Let's calculate left from the minimum index to the maximum. When we calculate left[i], we remove all elements j such that aj > ai from the stack (since the stack is "sorted", all these elements will be at the top of the stack, and when we encounter the first element j such that aj ≤ ai, it is guaranteed that all elements below it don't need to be deleted). Then, if there's any element on top of the stack, it becomes the value of left[i], then we push i into the stack. Since every element will be added (and deleted) not more than one time, the complexity of this algorithm is linear.<br><br>
+
+We can apply the same technique to calculate the values of right and the sum of maximums.<br><br>
 
 <!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
 </p>
 </br></br><b> Source Code:</b></br></br>
 
 <!-- Paste the Gist Embaded script  -->
-
+<script src="https://gist.github.com/shammo18/9972b7c1c5973226f2c83db9edde6ccc.js"></script>
 
 <!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
 </p>

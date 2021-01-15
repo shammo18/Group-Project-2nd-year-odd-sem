@@ -201,7 +201,7 @@ body {
   <div id="blogcntent">
    <h3>
 <!-- Paste the Problem Name -->
-
+Restore Permutation
 
 
 
@@ -211,7 +211,7 @@ body {
 <p> Problem Link : 
 <!-- Paste the Problem Link -->
 
-<a href=""> </a>
+<a href="https://codeforces.com/contest/1208/problem/D"> https://codeforces.com/contest/1208/problem/D</a>
 
 <!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
 </p>
@@ -220,6 +220,7 @@ body {
   <p> 
 <b>Tags:</b> 
   <!-- Paste The tag here  -->
+  Data Stucture (segment tree)
 </p>
  <br>
 
@@ -227,7 +228,13 @@ body {
 </br></br>
 <p style="color:black; ">
 <!-- Paste The Solution  -->
+Let us fill the array with numbers from 1 to 𝑁 in increasing order.
 
+1 will lie at the last index 𝑖 such that 𝑠𝑖=0. Find and remove this index 𝑖 from the array and for all indices greater than 𝑖, reduce their 𝑠𝑖 values by 1. Repeat this process for numbers 2,3,...𝑁. In the 𝑖𝑡ℎ turn, reduce the elements by 𝑖. <br>
+
+To find the last index with value zero, we can use segment tree to get range minimum query with lazy propagation. <br> <br>
+
+Time complexity: 𝑂(𝑁⋅𝑙𝑜𝑔(𝑁))
 
 
 <!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
@@ -235,7 +242,7 @@ body {
 </br></br><b> Source Code:</b></br></br>
 
 <!-- Paste the Gist Embaded script  -->
-
+<script src="https://gist.github.com/shammo18/9c4374d58a2a322b8d31e5bcc3173a3d.js"></script>
 
 <!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
 </p>

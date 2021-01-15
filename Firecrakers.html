@@ -201,7 +201,7 @@ body {
   <div id="blogcntent">
    <h3>
 <!-- Paste the Problem Name -->
-
+Firecrakers
 
 
 
@@ -211,15 +211,15 @@ body {
 <p> Problem Link : 
 <!-- Paste the Problem Link -->
 
-<a href=""> </a>
+<a href="https://codeforces.com/contest/1468/problem/D"> https://codeforces.com/contest/1468/problem/D</a>
 
 <!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
 </p>
 </p>
 
   <p> 
-<b>Tags:</b> 
   <!-- Paste The tag here  -->
+<b>Tags: Binary search , Greedy</b> 
 </p>
  <br>
 
@@ -227,6 +227,11 @@ body {
 </br></br>
 <p style="color:black; ">
 <!-- Paste The Solution  -->
+The first crucial observation that we need is the following one: it is optimal to light and drop some firecrackers, and only then start running away from the guard (that's because running away doesn't actually do anything if none of the firecrackers are lit). The hooligan shouldn't drop more than |𝑎−𝑏|−1 firecrackers, because otherwise he will be caught before starting running away, and the last firecracker he dropped won't go off. <br>
+
+Okay, now suppose the hooligan wants to explode exactly 𝑓 firecrackers. It's obvious that he wants to choose the 𝑓 firecrackers with minimum 𝑠𝑖, but in which order he should drop them? If the 𝑖-th firecracker he drops goes off in 𝑠𝑗 seconds, then it will explode on the (𝑖+𝑠𝑗)-th second. We have to choose an ordering of the firecrackers that minimizes the maximum of (𝑖+𝑠𝑗) in order to check that the hooligan has enough time to see all the firecrackers he dropped explode. It can be shown that we can drop the firecracker with the maximum 𝑠𝑗 first, then the firecracker with the second maximum 𝑠𝑗, and so on, and the maximum of (𝑖+𝑠𝑗) is minimized (obviously, we consider only the firecrackers with 𝑓 minimum values of 𝑠𝑖).<br>
+
+This leads us to a solution with a binary search on 𝑓 in 𝑂(𝑛log𝑛): we can check that the hooligan can explode at least 𝑓 firecrackers in 𝑂(𝑛) (after sorting the sequence 𝑠 beforehand), and binary search requires to check it for only log𝑛 values of 𝑓.
 
 
 
@@ -236,7 +241,7 @@ body {
 
 <!-- Paste the Gist Embaded script  -->
 
-
+<script src="https://gist.github.com/shammo18/b4a2a4ae2d75ee2cf015789089080f16.js"></script>
 <!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
 </p>
 </div>

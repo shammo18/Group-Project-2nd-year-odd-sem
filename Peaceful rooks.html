@@ -201,6 +201,7 @@ body {
   <div id="blogcntent">
    <h3>
 <!-- Paste the Problem Name -->
+Peachful rooks
 
 
 
@@ -211,15 +212,18 @@ body {
 <p> Problem Link : 
 <!-- Paste the Problem Link -->
 
-<a href=""> </a>
+
+<a href="https://codeforces.com/contest/1465/problem/C"> https://codeforces.com/contest/1465/problem/C</a>
 
 <!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
 </p>
 </p>
 
   <p> 
-<b>Tags:</b> 
   <!-- Paste The tag here  -->
+
+<b>Tags: </b> 
+DFS , Greedy , Implementation
 </p>
  <br>
 
@@ -227,6 +231,11 @@ body {
 </br></br>
 <p style="color:black; ">
 <!-- Paste The Solution  -->
+Consider rooks as edges in a graph. The position (𝑥,𝑦) will correspond to an edge (𝑥→𝑦). From the condition that there're at most one edge exits leading from each vertex and at most one edge leading to each vertex, it follows that the graph decomposes into cycles, paths, and loops (edges of type 𝑣→𝑣).<br>
+
+What happens to the graph when we move the rook? The edge changes exactly one of its endpoints. By such operations, we must turn all edges into loops, and the constraint on the number of edges going in and out of a vertex must be satisfied. A path is quite easy to turn into loops, just start from one end. A cycle must first be turned into a path, which is always possible. We've only spent one extra move, it's not hard to see that this is optimal.<br>
+
+The answer is the number of rooks minus the number of loops plus the number of cycles.<br>
 
 
 
@@ -236,7 +245,7 @@ body {
 
 <!-- Paste the Gist Embaded script  -->
 
-
+<script src="https://gist.github.com/shammo18/9ccfa36f4a57fee79530f6d06f474b79.js"></script>
 <!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
 </p>
 </div>
